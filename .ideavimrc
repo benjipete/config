@@ -1,0 +1,7 @@
+set mps+=<:>
+set clipboard+=unnamed
+nmap gi :action GotoImplementation<CR>
+nmap bd :action Back<CR>
+nmap fd :action Forward<CR>
+nmap r :action Vcs.RollbackChangedLines<CR>
+nmap dv :action Vcs.QuickListPopupAction<CR>
