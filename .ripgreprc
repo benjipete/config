@@ -1,0 +1,8 @@
+--type-add 
+conf:*{.conf}*
+
+--type-add
+web:*.{html,css,js}*
+
+--type-add
+pom:pom.xml
