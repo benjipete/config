@@ -76,8 +76,8 @@ Plugin 'junegunn/fzf.vim'
 " YouCompleteMe
 " Plugin 'Valloric/YouCompleteMe' 
 " Power line plugin
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'powerline/fonts'
+" Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Plugin 'powerline/fonts'
 
 Plugin 'scrooloose/nerdtree'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -114,7 +114,7 @@ syntax on
 " Fuzzy Finder mapping
 map ; :Files<CR>
 map ' :Rg<CR>
-map . :NERDTree<CR>
+map <F1> :NERDTreeToggle<CR>
 
 " You complete me config
 "
@@ -124,7 +124,7 @@ let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
+" set term=xterm-256color
 set termencoding=utf-8
 set laststatus=2
 " End Powerline setup
