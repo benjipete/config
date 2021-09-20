@@ -128,4 +128,5 @@ set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
 set laststatus=2
 " End Powerline setup
+au FileType gitcommit setlocal tw=72
 
