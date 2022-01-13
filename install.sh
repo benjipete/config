@@ -2,17 +2,23 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
+linkDotFile()
+{
+   if [ ! -f ~/$1 ]; then
+       ln -vs ${DIR}/$1 ~/$1
+   else
+       echo "ignoring $1 as it already exists in ~/"
+   fi
+}
+
 linkDotFiles()
 {
     for i in `ls -A ${DIR} | egrep '^\.' | grep -v ".git"`
     do
-        if [ ! -f ~/$i ]; then
-            ln -vs ${DIR}/$i ~/$i
-        else
-            echo "ignoring $i as it already exists in ~/"
-        fi
-
+        linkDotFile $i
     done
+    linkDotFile .gitconfig
+    linkDotFile .gitignore_global
 
 }
 

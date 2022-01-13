@@ -1,0 +1,31 @@
+[user]
+	name = bstorey
+	email = ben.storey@imc.com
+[core]
+	excludesfile = /export/home/bstorey/.gitignore_global
+[alias]
+	co = checkout
+	brav = branch -avv
+	lg = log --pretty=authoneline
+        s = status
+        l = log --oneline --graph --color
+        cg = config --global
+        b = branch
+        c = commit
+        cm = commit -m
+        cam = commit -am
+        cb = checkout -b
+        pr = pull --rebase
+        dc = diff --color
+[merge]
+	tool = meld
+[pretty]
+	authoneline = %C(bold red)%h %Creset%s %C(bold green)%aN %C(bold blue)(%ar)%Creset%C(yellow)%d%Creset
+[branch]
+	autosetuprebase = always
+[push]
+	default = matching
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
