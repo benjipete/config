@@ -99,20 +99,39 @@ scrolling:
 # change the `it` value in terminfo when altering this setting.
 #tabspaces: 8
 
-# Font configuration
 font:
-  # Normal (roman) font face
   normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  size: 15
+
+# Font configuration
+#font:
+  # Normal (roman) font face
+#  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: monospace
+#    family: Menlo
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+#    style: Regular
 
   # Bold font face
   #bold:
@@ -148,7 +167,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+#  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -287,7 +306,7 @@ cursor:
 #   - (Linux) user login shell
 #   - (Windows) powershell
 shell:
-  program: /usr/bin/zsh
+  program: /usr/local/bin/zsh
   args:
     - --login
 
