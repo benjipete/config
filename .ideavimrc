@@ -1,7 +1,14 @@
 set mps+=<:>
 set clipboard+=unnamed
 nmap gi :action GotoImplementation<CR>
+nmap gd :action GotoDeclaration<CR>
+nmap \gs :actiion Vcs.ShowTabbedFileHistory<CR>
 nmap bd :action Back<CR>
 nmap fd :action Forward<CR>
 nmap r :action Vcs.RollbackChangedLines<CR>
 nmap dv :action Vcs.QuickListPopupAction<CR>
+:map \g :action Annotate<CR>
+:map \a :action Annotate<CR>
+:map \c :action CallHierarchy<CR>
+:map \u :action FindUsages<CR>
+:map \s :action CIDR.Lang.SwitchHeaderSource<CR>
