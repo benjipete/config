@@ -1,8 +1,11 @@
+[http]
+    emptyAuth = true
 [user]
 	name = bstorey
 	email = ben.storey@imc.com
 [core]
 	excludesfile = /export/home/bstorey/.gitignore_global
+	editor = nvim
 [alias]
 	co = checkout
 	brav = branch -avv
